@@ -1,0 +1,43 @@
+# Site/SEO settings
+email: matheus@acception.com.br
+permalink: /:year/:month/:title/
+google_analytics: 
+
+name: Matheus Seabra
+title: Matheus Seabra
+description: Matheus Seabra is a UI Designer and Front-end Developer @ Acception based in Belém, Brasil.
+url: http://matheuseabra.github.io
+twitter_username: matseabra
+default_img: http://http://matheuseabra.github.io/assets/images/me.jpg
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
+exclude:
+  - node_modules
+  - .DS_Store
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - package.json
+  - README.md
+
+# Pagination
+paginate: 3
+paginate_path: '/page/:num/'
+
+# Collections
+collections:
+  work:
+    output: true
+    permalink: /:path/
+  skills:
+    output: true
+    permalink: /:path/

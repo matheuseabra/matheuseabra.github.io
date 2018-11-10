@@ -1,0 +1,66 @@
+//----------------------------------------------
+//  Lists
+//----------------------------------------------
+%no-list-style {
+  list-style-type: none;
+}
+
+ul,
+ol {
+  margin: 10px 20px;
+  padding: 0;
+}
+
+.skill__tags {
+  margin: 10px 20px;
+} 
+
+//----------------------------------------------
+//  Post Lists
+//----------------------------------------------
+.post {
+  ol,
+  ul {
+    margin: {
+      bottom: 1.5rem;
+      left: 1em;
+    }
+
+    font-size: 1.1em;
+
+    @media (min-width: $mq-small) {
+      font-size: 1.25em;
+    }
+
+    & > li {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        left: -1em;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 0.25rem;
+      }
+
+      p {
+        margin-bottom: 0;
+
+        font-size: inherit;
+      }
+    }
+  }
+
+  ol {
+    @extend %no-list-style;
+
+    counter-reset: li;
+
+    & > li:before {
+      content: counter(li) ".";
+
+      counter-increment: li;
+    }
+  }
+}

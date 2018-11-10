@@ -1,0 +1,16 @@
+<article class="work__work">
+  <a class="work__link" href="{{ work.url | prepend: site.baseurl }}" data-aos="slide-up">
+    {% if work.link_image %}
+        <div class="browser" data-aos="fade-in" data-aos-delay="400">
+          <span class="browser__dots"></span>
+          <img src="{{ work.link_image }}" alt="{{ work.title }}"/>
+        </div>    
+    {% endif %}
+    <header class="work__header">
+      <h3 class="work__title">
+        <span data-aos="slice-up" data-aos-duration="400">{{ work.title }}</span>
+      </h3>
+      <p class="work__text" data-aos="fade-in" data-aos-duration="400" data-aos-delay="100">{{ work.link_description }}</p>
+    </header>
+  </a>
+</article>

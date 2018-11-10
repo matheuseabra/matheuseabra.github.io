@@ -1,0 +1,61 @@
+//----------------------------------------------
+// Mast
+//---------------------------------------------- 
+.mast {
+  @extend %flex-align;
+  @extend %text-center;
+
+  min-height: 26em;
+  padding: 4em 1em;
+
+  @media (min-width: $mq-small) {
+    padding: 6em 2em;
+  }
+
+  @media (min-width: $mq-med) {
+    padding: 8em 4em;
+  }
+
+  &--media {
+    position: relative;
+
+    min-height: 24em;
+    padding-bottom: 56.5%;
+
+    .absolute-bg,
+    .absolute-vid {
+      opacity: 0.8;
+    }
+
+    .grid {
+      @extend %text-center;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+
+    .s-p-real-estate &,
+    .inrix & {
+      color: $color-white;
+    }
+  }
+
+  &__title {
+    @extend .intro__text;
+  }
+
+  &__date {
+    display: inline-block;
+    margin-top: 0.25em;
+
+    font-weight: 700;
+    font-size: 1.1em;
+
+    @media (min-width: $mq-small) {
+      font-size: 1.25em;
+    }
+  }
+}

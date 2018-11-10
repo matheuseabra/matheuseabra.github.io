@@ -1,0 +1,63 @@
+//----------------------------------------------
+// Footer
+//---------------------------------------------- 
+.footer {
+  @extend %flex-align;
+  @extend %text-center;
+
+  position: relative;
+
+  min-height: 18em;
+  padding: 4em 1em;
+
+  @media (min-width: $mq-small) {
+    min-height: 24em;
+    padding: 6em 2em;
+  }
+
+  @media (min-width: $mq-med) {
+    padding: 8em 4em;
+  }
+
+  &__contact {
+    @include link-underline(4px, $color-yellow);
+    @extend %font-h1;
+  }
+
+  &__list {
+    @extend %no-list-style;
+
+    position: absolute;
+    left: 0;
+    bottom: 1em;
+    z-index: $z-1;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @media (min-width: $mq-small) {
+      bottom: 2em;
+
+      justify-content: flex-end;
+      padding-right: 2em;
+    }
+
+    @media (min-width: $mq-med) {
+      bottom: 4em;
+
+      padding-right: 4em;
+    }
+
+    & > li:not(:last-child) {
+      margin-right: 1.25em;
+    }
+  }
+
+  &__link {
+    @include link-underline(2px, $color-yellow);
+
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+}

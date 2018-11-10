@@ -1,0 +1,74 @@
+//----------------------------------------------
+// Study
+//---------------------------------------------- 
+.study {
+
+  &__content {
+    
+  }
+
+  &__intro {
+
+    h2 {
+      overflow: hidden;
+
+      span {
+        display: block;
+      }
+    }
+
+    p {
+      font-size: 1.1em;
+
+      @media (min-width: $mq-small) {
+        font-size: 1.25em;
+      }
+
+      &:first-of-type {
+        margin-top: 0.25em;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      @include link-underline(1px, $color-grey);
+
+      color: $color-black;
+      white-space: nowrap;
+      transition: color 400ms ease-in-out;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        height: 1px;
+        width: 100%;
+        
+        background-color: $color-black;
+      }
+
+      &:hover {
+        color: $color-grey;
+      }
+    }
+  }
+
+  &__double {
+    @include flex-grid(1, 2, $pad: 1em);
+
+    & > div {
+
+      @media (min-width: $mq-small) {
+        padding: {
+          top: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+//----------------------------------------------
+// skill
+//---------------------------------------------- 
+.skill {
+
+    &__container {
+      display: flex;
+      flex-flow: wrap;
+      flex-direction: row;
+      margin: {
+        top: 1em;
+        right: -1em;
+        left: -1em;
+      }
+  
+      & > div {
+        flex-basis: 100%;
+        max-width: 100%;
+  
+        @media (min-width: $mq-small) {
+          flex-basis: 50%;
+          max-width: 50%;
+        }
+      }
+    }
+  
+    &__skill {
+      padding: 1em;
+  
+      @media (min-width: $mq-small) {
+        padding: {
+          top: 2em;
+          bottom: 2em;
+        }
+      }
+    }
+    
+    &__header {
+      margin-top: 1em;
+    }
+  
+    &__title {
+      overflow: hidden;
+      margin-bottom: 20px;
+      span {
+        display: inline-block;
+      }
+    }
+  
+    &__text {
+      @extend .posts__text;
+      
+      max-width: 26em;
+    }
+
+    &__tags {
+        margin-top: 15px;
+        list-style-type: square;
+        
+        &__tag {
+            margin: 10px 0;
+        }
+    }
+  }
+  

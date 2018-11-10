@@ -1,0 +1,255 @@
+//-------------------------------------------- 
+// Header
+//--------------------------------------------
+.header {
+  position: absolute;
+  top: 1em;
+  left: 0;
+  right: 0;
+  z-index: $z-998;
+
+  display: none;
+  padding: 1em;
+
+  @media (min-width: $mq-small) {
+    top: 2em;
+
+    display: flex;
+    justify-content: space-between;
+    padding: {
+      right: 2em;
+      left: 2em;
+    }
+  }
+
+  @media (min-width: $mq-med) {
+    top: 4em;
+    left: 1em;
+    right: 1em;
+
+    padding: {
+      right: 3em;
+      left: 3em;
+    }
+  }
+
+  .js-scrolling-up &,
+  .js-scrolling-down & {
+    position: fixed;
+    top: 1em;
+
+    background-color: $color-white;
+    box-shadow: 0px 1px 0px 1px rgba($color-black, 0.02), 0px 4px 16px rgba($color-black, 0.09);
+  }
+
+  .js-scrolling-up & {
+    animation: slide-down 700ms ease-in-out both;
+  }
+
+  .js-scrolling-down & {
+    animation: slide-up 700ms ease-in-out both;
+  }
+
+  &__title,
+  &__link {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: $color-yellow;
+
+    .s-p-real-estate &,
+    .inrix & {
+
+      @media (min-width: $mq-small) {
+        color: $color-white;
+      }
+    }
+
+    .js-scrolling-up &,
+    .js-scrolling-down & {
+      color: $color-black;
+    }
+  }
+
+  &__list {
+    @extend %no-list-style;
+
+    display: flex;
+
+    & > li:not(:last-child) {
+      margin-right: 1.25em;
+    }
+  }
+
+  &__link {
+    position: relative;
+
+    color: $color-black;
+    transition: all 400ms ease;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      height: 2px;
+      width: 0;
+      
+      background-color: $color-black;
+      transition: all 400ms ease;
+
+      .s-p-real-estate &,
+      .inrix & {
+        background-color: $color-white;
+      }
+
+      .js-scrolling-up &,
+      .js-scrolling-down & {
+        background-color: $color-black;
+      }
+    }
+
+    &:hover {
+
+      &:before {
+        left: 0;
+
+        width: 100%;
+        
+        background-color: $color-black;
+
+        .s-p-real-estate &,
+        .inrix & {
+          background-color: $color-white;
+        }
+
+        .js-scrolling-up &,
+        .js-scrolling-down & {
+          background-color: $color-black;
+        }
+      }
+    }
+  }
+}
+
+//----------------------------------------------
+// Header Mobile
+//---------------------------------------------- 
+.header {
+
+  &--mobile {
+    @extend %flex-align;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: $z-998;
+
+    justify-content: space-between;
+    padding: 1em;
+
+    background-color: $color-white;
+    box-shadow: 0px 1px 0px 1px rgba($color-black, 0.02), 0px 4px 16px rgba($color-black, 0.09);
+
+    @media (min-width: $mq-small) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 1em;
+
+    background-color: $color-white;
+    visibility: hidden;
+    opacity: 0;
+
+    .js-hamburger & {
+      display: block;
+
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__list {
+
+    .header--mobile & {
+      overflow: hidden;
+
+      & > li {
+        transform: translateY(110%);
+        transition: transform 400ms ease;
+
+        &:nth-of-type(1) {
+          transition-delay: 100ms;
+        }
+
+        &:nth-of-type(2) {
+          transition-delay: 200ms;
+        }
+
+        &:nth-of-type(3) {
+          transition-delay: 300ms;
+        }
+
+        .js-hamburger & {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
+
+//----------------------------------------------
+// Hamburger
+//---------------------------------------------- 
+.hamburger {
+  z-index: $z-999;
+
+  height: 15px;
+  width: 26px;
+
+  cursor: pointer;
+
+  & > div {
+    height: 2px;
+    width: 26px;
+    margin-left: auto;
+
+    background-color: $color-black;
+    transition: all 200ms ease-in-out;
+
+    &:nth-of-type(2) {
+      width: 18px;
+      margin: {
+        top: 4px;
+        bottom: 4px;
+      }
+    }
+  }
+
+  .js-hamburger & {
+
+    & > div {
+      background-color: $color-black;
+
+      &:nth-of-type(1) {
+        transform: translateY(6px) rotate(45deg);
+      }
+
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+
+      &:nth-of-type(3) {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+    }
+  }
+}
