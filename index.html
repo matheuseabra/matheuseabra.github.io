@@ -18,7 +18,7 @@ enabled: true
         data-aos-delay="100">projects</span>
     </h2>
     <div class="work__container">
-      {% assign ordered_work = site.work | sort: 'title' %}
+      {% assign ordered_work = site.work | sort: 'order' %}
         {% for work in ordered_work %}
           <div>
               {% include work-card.html %}

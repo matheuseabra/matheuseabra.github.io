@@ -1,15 +1,15 @@
 <article class="work__work">        
-          <header class="work__header">
+          <header class="card">
             <h3 class="work__title">
               <span data-aos="slice-up" data-aos-duration="400">{{ skills.title }}</span>
             </h3>
             
             <p class="work__text" data-aos="fade-in" data-aos-duration="400" data-aos-delay="100">{{ skills.description }}</p>
             <br>
-            <ul class="skill__tags">
+            <ul style="margin-left: 20px;">
                     {%for tag in skills.tags %}         
-                        <li class="skill__tag">{{ tag }}</li>
+                        <li>{{ tag }}</li>
                     {%endfor %}          
-                </ul>
+            </ul>
         </header>
 </article>
