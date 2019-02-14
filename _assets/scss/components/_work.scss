@@ -144,6 +144,13 @@
   }
 
   &__title {
+    background: #111;
+    color: #FFF;
+    width: fit-content;
+    margin: 15px 0;
+    transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
     overflow: hidden;
 
     span {

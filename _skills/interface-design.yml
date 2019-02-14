@@ -1,9 +1,13 @@
 ---
-title: 'User Interface Design'
-description: 'A great User Experience to a large extent influences user decision-making. UX is all about telling a story, using web elements to guide users through that story. The better the "story" of a website is told, the better its conversion.'
+order: 0
+title: 'User Experience Design'
+description: 'A great User Experience to a large extent influences user decision-making. UI is all about telling a story, using elements to guide users through that story.'
 tags:
  - Wireframing
- - Adobe XD, Sketch and Figma for high-fidelity prototyping
+ - Balsamiq Mockups
+ - Adobe XD
+ - Sketch
+ - Figma
  - Information Architecture
  - Sitemaps
 ---

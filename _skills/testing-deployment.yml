@@ -1,8 +1,11 @@
 ---
+order: 3
 title: 'Testing, Bundling & Deployment'
 description: 'Testing Driven Development (TDD) reduces the number of bugs released during deployment, making it critical to ship effective applications to production.'
 tags: 
- - Jest
- - Gulp and Webpack
- - AWS, Heroku
+ - Jest, Chai assertions
+ - Webpack  
+ - Gulp
+ - Docker
+ - Heroku
 ---
