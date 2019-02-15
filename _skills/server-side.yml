@@ -6,8 +6,7 @@ tags:
  - PHP 7 
  - Node.js 
  - ORMs 
- - SQL Server
+ - MySQL Server
  - MongoDB
- - HTTP
 ---
 
