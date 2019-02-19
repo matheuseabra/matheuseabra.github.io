@@ -5,10 +5,10 @@ google_analytics:
 
 name: Matheus Seabra
 title: Matheus Seabra
-description: Matheus Seabra is a UI Designer and Front-end Developer @ Acception based in Belém, Brasil.
-url: http://matheuseabra.github.io
+description: Matheus Seabra is a Fullstack Developer @ Vibe Desenvolvimento based in Belém, Brasil.
+url: http://matheuseabra.me
 twitter_username: matseabra
-default_img: http://http://matheuseabra.github.io/assets/images/me.jpg
+default_img: http://http://matheuseabra.me/assets/images/me.jpg
 
 # Build settings
 markdown: kramdown
