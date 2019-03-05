@@ -1,6 +1,6 @@
 //----------------------------------------------
 // Intro
-//---------------------------------------------- 
+//----------------------------------------------
 .intro {
   @extend %flex-align;
 
@@ -18,8 +18,8 @@
   }
 
   &__text {
-    @extend %auto-margin;
-    @extend %text-center;
+    // @extend %auto-margin;
+    @extend %text-left;
 
     @media (min-width: $mq-small) {
       max-width: 90%;
