@@ -1,11 +1,11 @@
 # Site/SEO settings
 email: matheusvieiracoelho@gmail.com
 permalink: /:year/:month/:title/
-google_analytics: 
+google_analytics:
 
 name: Matheus Seabra
 title: Matheus Seabra
-description: Matheus Seabra is a Fullstack Developer @ Vibe Desenvolvimento based in Belém, Brasil.
+description: Matheus Seabra is a Frontend Developer based in Belém, Brazil.
 url: http://matheuseabra.me
 twitter_username: matseabra
 default_img: http://http://matheuseabra.me/assets/images/me.jpg
@@ -31,7 +31,7 @@ exclude:
 
 # Pagination
 paginate: 3
-paginate_path: '/page/:num/'
+paginate_path: "/page/:num/"
 
 # Collections
 collections:
