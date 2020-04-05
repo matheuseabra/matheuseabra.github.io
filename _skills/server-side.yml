@@ -3,11 +3,11 @@ order: 2
 title: "Server-side Development"
 description: "Writing production-ready code that works across devices and browsers became a must for meeting business requirements and user needs, following current web development standards and best practices."
 tags:
-  - PHP
+  - Python
   - Node.js
   - ORMs
-  - MySQL Server
+  - PostgreSQL Server
   - MongoDB
-  - JSON Web Token, Basic Auth, HTTP Protocol
+  - JWT, Basic Auth, HTTP Protocol
 ---
 
