@@ -4,11 +4,14 @@ permalink: /:year/:month/:title/
 google_analytics:
 
 name: Matheus Seabra
-title: Matheus Seabra
-description: Matheus Seabra is a Frontend Developer based in Belém, Brazil.
-url: http://matheuseabra.me
+title: Matheus Seabra | Software Engineer
+description: Matheus Seabra is a Software Engineer based in Vitória, Brazil.
+url: https://matheuseabra.me
 twitter_username: matseabra
-default_img: http://http://matheuseabra.me/assets/images/me.jpg
+
+# Sass
+sass:
+  sass_dir: _assets/scss
 
 # Build settings
 markdown: kramdown

@@ -5,9 +5,10 @@ description: "Writing production-ready code that works across devices and browse
 tags:
   - Python
   - Node.js
-  - ORMs
-  - PostgreSQL Server
-  - MongoDB
-  - JWT, Basic Auth, HTTP Protocol
+  - Postgres, MongoDB
+  - HTTP, REST, GraphQL, WebSockets
+  - Redis
+  - Sentry, Grafana
+  - JWT, Auth0, Cors
 ---
 

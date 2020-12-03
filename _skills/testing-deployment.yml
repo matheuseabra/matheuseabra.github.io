@@ -3,10 +3,12 @@ order: 3
 title: "Testing, Bundling & Deployment"
 description: "Testing Driven Development (TDD) reduces the number of bugs released during deployment, making it critical to ship effective applications to production."
 tags:
-  - Jest, Cypress, Mocha
-  - Webpack, Gulp
+  - Pytest, Jest, Cypress
+  - Webpack, Rollup
   - Docker
-  - Netlify, Heroku
+  - GitHub Actions, CircleCI
+  - AWS, Netlify, Heroku
+  - Linux
   - Git
 ---
 
