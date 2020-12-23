@@ -7,6 +7,10 @@ layout: compress
 
   {% include head.html %}
 
+  {% if jekyll.environment == 'production' and site.google_analytics  %}
+  {% include analytics.html %}
+  {% endif %}
+
 </head>
 <body>
   <div id="barba-wrapper">

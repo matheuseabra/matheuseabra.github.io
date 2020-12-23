@@ -1,7 +1,7 @@
 # Site/SEO settings
 email: matheusvieiracoelho@gmail.com
 permalink: /:year/:month/:title/
-google_analytics:
+google_analytics: "UA-99071986-4"
 
 name: Matheus Seabra
 title: Matheus Seabra
