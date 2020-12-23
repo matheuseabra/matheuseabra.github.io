@@ -4,6 +4,16 @@ pagination:
 enabled: true
 ---
 
+<style>
+  .black-stripe {
+    background-color: #000;
+    color: #F4F4F4;
+    padding: 0 10px;
+    width: max-content;
+    margin: 5px 0;
+  }
+</style>
+
 <section class="intro bg-white rellax" data-rellax-speed="-4">
   <div class="grid">
     <div>
@@ -20,9 +30,9 @@ enabled: true
 
 <section id="about" class="work section-padding bg-lightgrey">
   <div class="grid">
-    <h2 class="work__title">
+    <h2 class="work__title black-stripe">
       <span data-aos="slice-up" data-aos-duration="400">A bit about</span>
-      <span data-aos="slice-up" data-aos-duration="400" data-aos-delay="100">me &#x1F468;&#x200D;&#x1F4BB; </span>
+      <span data-aos="slice-up" data-aos-duration="400" data-aos-delay="100">me</span>
     </h2>
     <br />
     <h3 class="work__subtitle">
@@ -68,9 +78,9 @@ enabled: true
 
 <section id="projects" class="work section-padding bg-white">
   <div class="grid">
-    <h2 class="work__title">
+    <h2 class="work__title black-stripe">
       <span data-aos="slice-up" data-aos-duration="400">Featured</span>
-      <span data-aos="slice-up" data-aos-duration="400" data-aos-delay="100">work &#x2B50;</span>
+      <span data-aos="slice-up" data-aos-duration="400" data-aos-delay="100">work</span>
     </h2>
     <div class="work__container">
       {% assign ordered_work = site.work | sort: 'order' %} {% for work in
@@ -85,9 +95,9 @@ enabled: true
 
 <section id="skills" class="skills section-padding bg-lightgrey">
   <div class="grid">
-    <h2 class="work__title">
+    <h2 class="work__title black-stripe">
       <span data-aos="slice-up" data-aos-duration="400">Experience</span>
-      <span data-aos="slice-up" data-aos-duration="400" data-aos-delay="100">& skills &#x1F9F0;</span>
+      <span data-aos="slice-up" data-aos-duration="400" data-aos-delay="100">& skills</span>
     </h2>
     <div class="work__container">
       {% assign ordered_skills = site.skills | sort: 'order' %} {% for skills in
