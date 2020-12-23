@@ -10,9 +10,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: 🛎 Check out master
+      - name: 🛎 Check out to master
         uses: actions/checkout@v2
-      - name: 🧪 Build and deploy
+
+      - name: Cache to shorten build times and decrease load on servers
+        uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: 🧪 Build Jekyll and deploy to GitHub Pages
         uses: helaili/jekyll-action@2.0.1
         env:
           JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
