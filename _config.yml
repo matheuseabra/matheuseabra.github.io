@@ -31,6 +31,7 @@ exclude:
   - gulpfile.js
   - package.json
   - README.md
+  - vendor
 
 # Pagination
 paginate: 3
