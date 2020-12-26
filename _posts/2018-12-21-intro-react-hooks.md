@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introducing React Hooks"
+title: "React hooks to the rescue"
 date: 2018-12-21
 description: A gentle introduction to React Hooks and how they fit in the development lifecyle of your React apps.
 image: /assets/images/posts/react-hooks.png
@@ -24,11 +24,10 @@ If you want to use state or lifecycle methods you would normally have to change 
 Hooks are plain JavaScript functions where you can make a Hook call. They let you use state and other React features without writing a class.
 </p>
 
-<pre>
-<code>
+```javascript
 import React, { useState } from 'react';
 
-function Example() {
+function Counter() {
 
   // Declare a new state variable, which we'll call "count"
   // Use array destructuring to define state a variable and 
@@ -44,8 +43,7 @@ function Example() {
     </div>
   );
 }
-</code>
-</pre>
+```
 
 <h2>Why are Hooks being proposed?</h2>
 <br>
@@ -138,12 +136,4 @@ useEffect(() => {
   These are the most basic hooks that are explained in the React documentation. However you can use much more native hooks created by the awesome React community.
 </p>
 
-<ul>
- <li><a href="https://reactjs.org/docs/hooks-reference.html#additional-hooks">https://reactjs.org/docs/hooks-reference.html#additional-hooks</a></li>
- <li><a href="https://github.com/rehooks/awesome-react-hooks">https://github.com/rehooks/awesome-react-hooks</a></li>
-</ul>
-
-
-<h2>Go Hooks!</h2>
-
-<p>You can learn more about hooks at <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React's documentation</a></p>
+<p>You can learn more about hooks at <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React's documentation.</a></p>

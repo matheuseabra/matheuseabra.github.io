@@ -33,7 +33,7 @@
     z-index: $z-1;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
 
     @media (min-width: $mq-small) {

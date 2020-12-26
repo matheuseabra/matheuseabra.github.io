@@ -46,22 +46,14 @@
   }}{% endif %}" />
 
 <link rel="icon" type="image/x-icon" href="{{ '/assets/images/fav.png' | prepend: site.baseurl }}" />
-
 <link rel="stylesheet" href="{{ '/assets/css/fonts.min.css' | prepend: site.baseurl }}" />
 <link rel="stylesheet" href="{{ '/assets/css/app.min.css' | prepend: site.baseurl }}" />
-
+<link rel="stylesheet" href="/assets/css/highlight.css" />
+<link rel="stylesheet" href="/assets/css/overides.css" />
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
   href="{{ '/feed.xml' | prepend: site.baseurl }}" />
 <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl }}" />
 
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
-<style>
-  .icon-footer {
-    color: #FFF;
-    font-size: 24px;
-  }
-  .work__subtitle {
-    font-weight: 400 !important;
-  }
-</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>

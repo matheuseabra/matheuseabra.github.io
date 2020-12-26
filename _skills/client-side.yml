@@ -1,11 +1,14 @@
 ---
 order: 1
-title: "Client-side Development"
+title: "2. Client-side Development"
 description: "Load-time has never been more important. After 3 of seconds of waiting, users are leaving the website. That is why a performance-driven approach to client-side development is essential to reduce bundle size and optmize user engagement, helping users to get more done."
 tags:
   - HTML 5
   - CSS 3 / Sass
+  - React / Redux
   - JavaScript (ES6+)
+  - Babel
+  - Webpack, Rollup
   - Third-party API Integration
   - Performance Optmization
   - SEO
