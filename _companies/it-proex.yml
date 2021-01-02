@@ -1,16 +1,16 @@
 ---
 order: 3
 title: "IT Proex"
-role: "Software Developer "
+role: "Software Developer"
 duration: "2016 - 2017"
 description: "
 IT Proex fulfills the role of developing a University Extension Policy in order to deepen the discussion about extension as a social and university project and government and public policies.
 "
-tags:
-  - React
-  - Node.js
-  - MySQL Server
-  - Trello
-  - GitLab
-  - Heroku
+# tags:
+#   - React
+#   - Node.js
+#   - MySQL Server
+#   - Trello
+#   - GitLab
+#   - Heroku
 ---

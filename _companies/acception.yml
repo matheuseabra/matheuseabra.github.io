@@ -1,16 +1,16 @@
 ---
 order: 2
 title: "Acception Tecnologia"
-role: "Frontend Engineer"
+role: "Frontend Developer"
 duration: "2017 - 2018"
 description: "
   Acception is a small fintech startup helping big Brazilian businesses to outsource their finance operations by building systems that manage invoicing experiences. The company provides software development, web and mobile applications services in financial products and incubators for startups.
 "
-tags:
-  - React
-  - Node.js
-  - Groovy
-  - PostgresSQL
-  - Jenkins
-  - Microsoft Azure
+# tags:
+#   - React
+#   - Node.js
+#   - Groovy
+#   - PostgresSQL
+#   - Jenkins
+#   - Microsoft Azure
 ---

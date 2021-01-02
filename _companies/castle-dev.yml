@@ -6,12 +6,12 @@ title: "Castle Dev"
 description: "
   Castle Dev was a digital agency startup with the mission to offer customized web development and social media management services for small businesses looking to build their digital presence online and manage technology to reach broader audiences and offer better products and services.
 "
-tags:
-  - Jekyll
-  - React
-  - Node.js
-  - MongoDB
-  - Heroku
-  - Trello
-  - GitHub
+# tags:
+#   - Jekyll
+#   - React
+#   - Node.js
+#   - MongoDB
+#   - Heroku
+#   - Trello
+#   - GitHub
 ---

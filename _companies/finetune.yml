@@ -6,12 +6,12 @@ title: "FineTune Learning"
 description: "
  FineTune is a startup in the EdTech Industry that creates cloud-based solutions for benchmark and formative writing assessments in grades 6-12, that seamlessly integrates high-quality content, automated feedback, hybrid (A.I./human) rubric-based evaluation, and detailed reporting to inform instruction, tighten the feedback loop, and measure student performance over time. 
 "
-tags:
-  - React
-  - GraphQL
-  - Python
-  - PostgresSQL
-  - Docker
-  - Amazon Web Services
-  - GitHub
+# tags:
+#   - React
+#   - GraphQL
+#   - Python
+#   - PostgresSQL
+#   - Docker
+#   - Amazon Web Services
+#   - GitHub
 ---
