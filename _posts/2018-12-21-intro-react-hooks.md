@@ -25,21 +25,18 @@ Hooks are plain JavaScript functions where you can make a Hook call. They let yo
 </p>
 
 ```javascript
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Counter() {
-
   // Declare a new state variable, which we'll call "count"
-  // Use array destructuring to define state a variable and 
+  // Use array destructuring to define state a variable and
   // a function to update the state
   const [count, setCount] = useState(0);
 
   return (
     <div>
       <span>You clicked {count} times</span>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 }

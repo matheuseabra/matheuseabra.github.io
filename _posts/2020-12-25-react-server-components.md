@@ -12,12 +12,11 @@ It's a new (old) way to render React components but from a server-driven perspec
 
 Although it's not quite ready for production yet, it's worth to take a look at how it works and how it might be a good fit for certain use cases.
 
-
 ## Current SSR has limitations
 
 Today's Server-side rendering of client-side JavaScript can be suboptimal. JavaScript for your components is rendered on the server into an HTML string. This HTML is delivered to the browser, which can appear to result in a fast First Contentful Paint or Largest Contentful Paint.
 
-However, JavaScript still needs to be fetched for interactivity which is often achieved via a hydration step. 
+However, JavaScript still needs to be fetched for interactivity which is often achieved via a hydration step.
 
 Server-side rendering is generally used for the initial page load, so post-hydration you're unlikely to see it used again.
 
@@ -46,10 +45,10 @@ This time however, the JavaScript bundle will be significantly smaller. Early ex
 ```javascript
 // NoteWithMarkdown.server.js - Server Component === zero bundle size
 
-import marked from 'marked'; // zero bundle size
-import sanitizeHtml from 'sanitize-html'; // zero bundle size
+import marked from "marked"; // zero bundle size
+import sanitizeHtml from "sanitize-html"; // zero bundle size
 
-function NoteWithMarkdown({text}) {
+function NoteWithMarkdown({ text }) {
   // same as before
 }
 ```
@@ -60,16 +59,16 @@ It's been considered a best-practice to only serve code users need as they need 
 
 ```javascript
 // PhotoRenderer.js (before Server Components)
-import React from 'react';
+import React from "react";
 
 // one of these will start loading *when rendered on the client*:
-const OldPhotoRenderer = React.lazy(() => import('./OldPhotoRenderer.js'));
-const NewPhotoRenderer = React.lazy(() => import('./NewPhotoRenderer.js'));
+const OldPhotoRenderer = React.lazy(() => import("./OldPhotoRenderer.js"));
+const NewPhotoRenderer = React.lazy(() => import("./NewPhotoRenderer.js"));
 
 function Photo(props) {
   // Switch on feature flags, logged in/out, type of content, etc:
   if (FeatureFlags.useNewPhotoRenderer) {
-    return <NewPhotoRenderer {...props} />; 
+    return <NewPhotoRenderer {...props} />;
   } else {
     return <PhotoRenderer {...props} />;
   }
@@ -78,20 +77,19 @@ function Photo(props) {
 
 Some of the challenges with code-splitting are:
 
-* Outside of a meta-framework (like Next.js), you often have to tackle this optimization manually, replacing import statements with dynamic imports.
+- Outside of a meta-framework (like Next.js), you often have to tackle this optimization manually, replacing import statements with dynamic imports.
 
-* It might delay when the application begins loading the component impacting the user-experience.
+- It might delay when the application begins loading the component impacting the user-experience.
 
 Server Components introduce automatic code-splitting treating all normal imports in Client components as possible code-split points. They also allow developers to select which component to use much earlier (on the server), allowing the client to fetch it earlier in the rendering process.
 
-
 ```javascript
-  // PhotoRenderer.server.js - Server Component
-import React from 'react';
+// PhotoRenderer.server.js - Server Component
+import React from "react";
 
 // one of these will start loading *once rendered and streamed to the client*:
-import OldPhotoRenderer from './OldPhotoRenderer.client.js';
-import NewPhotoRenderer from './NewPhotoRenderer.client.js';
+import OldPhotoRenderer from "./OldPhotoRenderer.client.js";
+import NewPhotoRenderer from "./NewPhotoRenderer.client.js";
 
 function Photo(props) {
   // Switch on feature flags, logged in/out, type of content, etc:
@@ -109,11 +107,11 @@ No. They are quite different. Initial adoption of Server Components will actuall
 
 To summarize a good explanation of the differences between Next.js SSR and Server Components from Dan Abramov:
 
-* Code for Server Components is never delivered to the client. In many implementations of SSR using React, component code gets sent to the client via JavaScript bundles anyway. This can delay interactivity.
+- Code for Server Components is never delivered to the client. In many implementations of SSR using React, component code gets sent to the client via JavaScript bundles anyway. This can delay interactivity.
 
-* Server components enable access to the back-end from anywhere in the tree. When using Next.js, you're used to accessing the back-end via getServerProps() which has the limitation of only working at the top-level page. Random npm components are unable to do this.
+- Server components enable access to the back-end from anywhere in the tree. When using Next.js, you're used to accessing the back-end via getServerProps() which has the limitation of only working at the top-level page. Random npm components are unable to do this.
 
-* Server Components may be refetched while maintaining Client-side state inside of the tree. This is because the main transport mechanism is much richer than just HTML, allowing the refetching of a server-rendered part (e.g such as a search result list) without blowing away state inside (e.g search input text, focus, text selection)
+- Server Components may be refetched while maintaining Client-side state inside of the tree. This is because the main transport mechanism is much richer than just HTML, allowing the refetching of a server-rendered part (e.g such as a search result list) without blowing away state inside (e.g search input text, focus, text selection)
 
 ## Conclusion
 
@@ -127,10 +125,10 @@ Thus, reducing bundle size by a lot.
 
 To learn more about this work, watch the talk from Dan and Lauren, read the RFC and do check out the Server Components demo to play around with this work. With thanks to Sebastian Markbåge, Lauren Tan, Joseph Savona and Dan Abramov for their work on Server Components.
 
-* [Lauren and Dan's talk](https://twitter.com/sugarpirate_/status/1341141198258524163)
+- [Lauren and Dan's talk](https://twitter.com/sugarpirate_/status/1341141198258524163)
 
-* [Addy Osmani blog post](https://addyosmani.com/blog/react-server-components/)
+- [Addy Osmani blog post](https://addyosmani.com/blog/react-server-components/)
 
-* [Server components demo](https://github.com/reactjs/server-components-demo)
+- [Server components demo](https://github.com/reactjs/server-components-demo)
 
-* [Official React blog post](https://reactjs.org/blog/2020/12/21/data-fetching-with-react-server-components.html)
+- [Official React blog post](https://reactjs.org/blog/2020/12/21/data-fetching-with-react-server-components.html)

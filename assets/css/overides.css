@@ -1,10 +1,21 @@
 code,
-kbd,
-pre,
-samp {
-  font-size: 18px;
+pre {
   background: #011627;
   color: #fff;
+  margin: 10px auto;
+  padding: 0;
+  padding: 10px;
+  width: auto;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  code,
+  pre {
+    margin-left: 0;
+    max-width: 85vw;
+    font-size: 0.9em;
+  }
 }
 
 .black-stripe {
