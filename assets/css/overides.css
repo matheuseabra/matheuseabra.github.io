@@ -23,6 +23,11 @@ pre {
     max-width: 85vw;
     font-size: 0.9em;
   }
+
+  .grid-post {
+    max-width: 85vw;
+    margin: 0 auto;
+  }
 }
 
 .black-stripe {
