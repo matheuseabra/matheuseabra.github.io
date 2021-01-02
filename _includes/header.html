@@ -1,122 +1,100 @@
 {% if page.url == "/" %}
-  <header class="header">
-    <a class="header__title" data-scroll href="#">Matheus Seabra</a>
-    <nav>
-      <ul class="header__list">
-        <li>
-          <a class="header__link" data-scroll href="#about">About</a>
-        </li>
-        <li>
-          <a class="header__link" data-scroll href="#projects">Work</a>
-        </li>
-        <li>
-          <a class="header__link" data-scroll href="#skills">Skills</a>
-        </li>
-        <li>
+<header class="header">
+  <a class="header__title" data-scroll href="#">Matheus Seabra</a>
+  <nav>
+    <ul class="header__list">
+      <li>
+        <a class="header__link" href="{{ '/resume' | prepend: site.baseurl }}">Resume</a>
+      </li>
+      <li>
+        <a class="header__link" data-scroll href="#about">About</a>
+      </li>
+      <li>
+        <a class="header__link" data-scroll href="#projects">Work</a>
+      </li>
+      <li>
         <a class="header__link" href="#articles" data-scroll>Blog</a>
       </li>
-        <li>
-          <a class="header__link" data-scroll href="#contact">Contact</a>
-        </li>
-        <li>
-          <a class="header__link" href="{{ site.url }}/downloads/Matheus-Seabra-Resume.pdf" target="_blank">Resume</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <li>
+        <a class="header__link" data-scroll href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-  <header class="header--mobile">
-    <a class="header__title" data-scroll href="#">Matheus Seabra</a>
+<header class="header--mobile">
+  <a class="header__title" data-scroll href="#">Matheus Seabra</a>
 
-    <div class="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li>
-          <a class="header__link" data-scroll href="#about">About</a>
-        </li>
-        <li>
-          <a class="header__link" data-scroll href="#projects">Work</a>
-        </li>
-        <li>
-          <a class="header__link" data-scroll href="#skills">Skills</a>
-        </li>
-        <li>
+  <div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <nav class="header__nav">
+    <ul class="header__list">
+      <li>
+        <a class="header__link" data-scroll href="#about">About</a>
+      </li>
+      <li>
+        <a class="header__link" data-scroll href="#projects">Work</a>
+      </li>
+      <li>
         <a class="header__link" href="#articles" data-scroll>Blog</a>
       </li>
-        <li>
-          <a class="header__link" data-scroll href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <li>
+        <a class="header__link" data-scroll href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 {% else %}
-  <header class="header">
-    <a class="header__title" href="{{ '/' | prepend: site.baseurl }}">Matheus Seabra</a>
+<header class="header">
+  <a class="header__title" href="{{ '/' | prepend: site.baseurl }}">Matheus Seabra</a>
 
-    <nav>
-      <ul class="header__list">
-        <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="about">About</a>
-        </li>
-        <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="projects">Work</a>
-        </li>
-        <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="skills">Skills</a>
-        </li>
-        <li>
-        <a
-          class="header__link"
-          href="{{ '/' | prepend: site.baseurl }}"
-          data-anchor="articles"
-          >Blog</a
-        >
+  <nav>
+    <ul class="header__list">
+      <li>
+        <a class="header__link" href="{{ '/resume' | prepend: site.baseurl }}">Resume</a>
       </li>
-        <li>
-          <a class="header__link" data-scroll href="#contact">Contact</a>
-        </li>
-        <li>
-          <a class="header__link" href="{{ site.url }}/downloads/Matheus-Seabra-Resume.pdf" target="_blank">Resume</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <header class="header--mobile">
-    <a class="header__title" href="{{ '/' | prepend: site.baseurl }}">Matheus Seabra</a>
-
-    <div class="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="about">About</a>
-        </li>
-        <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="projects">Work</a>
-        </li>
-        <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="skills">Skills</a>
-        </li>
-        <li>
-        <a
-          class="header__link"
-          href="{{ '/' | prepend: site.baseurl }}"
-          data-anchor="articles"
-          >Blog</a
-        >
+      <li>
+        <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="about">About</a>
       </li>
-        <li>
-          <a class="header__link" data-scroll href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <li>
+        <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="projects">Work</a>
+      </li>
+      <li>
+        <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="articles">Blog</a>
+      </li>
+      <li>
+        <a class="header__link" data-scroll href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<header class="header--mobile">
+  <a class="header__title" href="{{ '/' | prepend: site.baseurl }}">Matheus Seabra</a>
+
+  <div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <nav class="header__nav">
+    <ul class="header__list">
+      <li>
+        <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="about">About</a>
+      </li>
+      <li>
+        <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="projects">Work</a>
+      </li>
+      <li>
+        <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="articles">Blog</a>
+      </li>
+      <li>
+        <a class="header__link" data-scroll href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 {% endif %}
