@@ -1,12 +1,13 @@
 ---
 order: 2
-title: "3. Server-side Development"
+title: "Server-side Development"
 description: "Writing production-ready code that works across devices and browsers became a must for meeting business requirements and user needs, following current web development standards and best practices."
 tags:
   - Python
   - Node.js
-  - Postgres, MongoDB
-  - HTTP, REST, GraphQL, WebSockets
+  - Postgres
+  - MongoDB
+  - REST, GraphQL, WebSockets
   - Redis
   - Sentry, Grafana
   - JWT, Auth0, Cors

@@ -1,0 +1,56 @@
+---
+layout: page
+title: "Resume"
+description: Prefer the PDF version? <a class="header__link" href="https://matheuseabra.me/downloads/Matheus-Seabra-Resume.pdf" target="_blank">Preview it</a> here.
+permalink: /resume/
+---
+
+<section id="skills" class="skills section-padding bg-lightgrey">
+  <div class="grid">
+
+    <h2 class="work__title black-stripe">
+      <span data-aos="slice-up" data-aos-duration="400">Professional</span>
+      <span data-aos="slice-up" data-aos-duration="400" data-aos-delay="100">experience</span>
+    </h2>
+    
+    <div class="work__container">
+      {% assign ordered_companies = site.companies | sort: 'order' %} {% for company in ordered_companies %}
+        {% include company-card.html %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills section-padding">
+  <div class="grid">
+    <h2 class="work__title black-stripe">
+      <span data-aos="slice-up" data-aos-duration="400">Education</span>
+      <span data-aos="slice-up" data-aos-duration="400" data-aos-delay="100">& certifications</span>
+    </h2>
+    <div style="margin-left: -16px;">
+      {% assign ordered_schools = site.schools | sort: 'order' %} {% for school in
+        ordered_schools %}
+        <div>
+          {% include school-card.html %}
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills section-padding bg-lightgrey">
+  <div class="grid">
+    <h2 class="work__title black-stripe">
+      <span data-aos="slice-up" data-aos-duration="400">Skills</span>
+      <span data-aos="slice-up" data-aos-duration="400" data-aos-delay="100">& technologies</span>
+    </h2>
+    <div class="work__container">
+      {% assign ordered_skills = site.skills | sort: 'order' %} {% for skills in
+      ordered_skills %}
+      <div>
+        {% include skill-card.html %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

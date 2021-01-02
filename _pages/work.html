@@ -1,0 +1,22 @@
+---
+layout: page
+title: "Work"
+permalink: /work/
+---
+
+<section id="work" class="work section-padding bg-lightgrey">
+  <div class="grid">
+    <h2 class="work__title black-stripe">
+      <span data-aos="slice-up" data-aos-duration="400">Featured</span>
+      <span data-aos="slice-up" data-aos-duration="400" data-aos-delay="100">work</span>
+    </h2>
+    <div class="work__container">
+      {% assign ordered_work = site.work | sort: 'order' %} {% for work in
+      ordered_work %}
+      <div>
+        {% include work-card.html %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

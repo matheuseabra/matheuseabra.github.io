@@ -37,9 +37,18 @@ exclude:
 paginate: 3
 paginate_path: "/page/:num/"
 
+include:
+ - _pages
+
 # Collections
 collections:
   work:
+    output: true
+    permalink: /:path/
+  companies:
+    output: true
+    permalink: /:path/
+  schools:
     output: true
     permalink: /:path/
   skills:

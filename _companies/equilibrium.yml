@@ -1,0 +1,20 @@
+---
+order: 5
+title: "Equilibrium Web"
+role: "Software Developer"
+duration: "2013 - 2014"
+description: "
+Led a successful refactor of the UI layout and client-side
+legacy architecture from jQuery to a modern frontend
+architecture built with React. Clients were delighted with
+the end result.
+"
+tags:
+  - CSS 3
+  - JavaScript
+  - Node.js
+  - PHP
+  - MySQL Server
+  - Trello
+  - GitLab
+---

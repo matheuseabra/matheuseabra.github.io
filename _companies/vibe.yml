@@ -1,0 +1,16 @@
+---
+order: 1
+title: "Vibe Desenvolvimento"
+role: "Frontend Engineer"
+duration: "2018 - 2019"
+description: "
+  Vibe is a software development house that specializes in delivering enterprise software solutions. The company manages software development projects, IT infrastructure management, information technology consultancy, integration, support and systems implementation, with clients ranging from large public institutions to private banks.
+"
+tags:
+  - Angular
+  - TypeScript
+  - Java
+  - Oracle SQL Server
+  - Microsoft Azure
+  - Bitbucket
+---

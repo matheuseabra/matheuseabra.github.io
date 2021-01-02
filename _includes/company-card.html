@@ -1,0 +1,17 @@
+<article class="work__work">        
+  <header class="card">
+    <h3 class="work__title">
+      <span data-aos="slice-up" data-aos-duration="400">{{ company.title }}</span>
+    </h3>
+
+    <small class="work__text" data-aos="fade-in" data-aos-duration="400" data-aos-delay="100">{{ company.role }} | {{ company.duration }}</small>
+    
+    <p style="margin-top: 15px;" class="work__text" data-aos="fade-in" data-aos-duration="400" data-aos-delay="100">{{ company.description }}</p>
+
+    <ul style="margin: 10px 0 0 20px;">
+      {%for tag in company.tags %}
+        <li>{{ tag }}</li>
+      {%endfor %}     
+    </ul>
+  </header>
+</article>
