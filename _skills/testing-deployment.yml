@@ -4,7 +4,6 @@ title: "4. Testing, CI/CD & Deployment"
 description: "Testing Driven Development (TDD) reduces the number of bugs released during deployment, making it critical to ship effective applications to production."
 tags:
   - Pytest, Jest, Cypress
-  - Webpack, Rollup
   - GitHub Actions, CircleCI
   - Docker, docker-compose
   - AWS, Heroku, Netlify
