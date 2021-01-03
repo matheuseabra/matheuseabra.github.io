@@ -65,7 +65,6 @@ textarea {
   border: none;
   background: #fff;
   padding: 10px 20px;
-  border-radius: 4px;
   width: 100%;
   margin: 10px 0;
 }
@@ -75,7 +74,6 @@ button {
   border: none;
   padding: 0 20px;
   font-weight: bold;
-  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -143,7 +141,7 @@ input:focus,
   width: auto;
   padding: 0 20px;
   color: #fff;
-  background-color: #000;
+  /* background-color: #000; */
 }
 
 .article-thumb time {

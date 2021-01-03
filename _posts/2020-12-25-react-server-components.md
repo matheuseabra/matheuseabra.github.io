@@ -4,6 +4,7 @@ title: "Enter React Server Components"
 date: 2020-12-25
 description: An introduction to what React server components are and how this broadens React use cases.
 image: /assets/images/posts/react-server-components.png
+color: "#61dafb"
 ---
 
 Recently, Dan and Lauren from the React team [made a talk](https://www.youtube.com/watch?v=TQQPAU21ZUw) introducing a experimental feature from React called zero-bundle-size Server Components.
