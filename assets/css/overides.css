@@ -7,6 +7,22 @@
   margin: 5px 0 30px 0 !important;
 }
 
+#markdown blockquote {
+  text-align: left;
+  font-style: italic;
+  border-left: 4px solid #000;
+  background: #f4f4f4;
+  padding: 20px;
+  font-size: 1em;
+}
+
+#markdown code {
+  background-color: #282a36;
+  color: #fff;
+  padding: 0 3px;
+  border-radius: 4px;
+}
+
 ul li {
   margin-left: 20px;
 }
@@ -15,7 +31,24 @@ pre {
   margin: 20px 0;
   padding: 20px;
   width: auto;
-  font-size: 1em;
+  font-size: 1.1em;
+}
+
+input,
+textarea {
+  border: none;
+  background: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+button {
+  outline: 0;
+  border: none;
+  padding: 0 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
@@ -58,23 +91,6 @@ pre {
 .newsletter-description {
   margin: 30px 0;
   width: 75%;
-}
-
-input,
-textarea {
-  border: none;
-  background: #fff;
-  padding: 10px 20px;
-  width: 100%;
-  margin: 10px 0;
-}
-
-button {
-  outline: 0;
-  border: none;
-  padding: 0 20px;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .newsletter-input {
@@ -141,9 +157,21 @@ input:focus,
   width: auto;
   padding: 0 20px;
   color: #fff;
-  /* background-color: #000; */
+}
+
+.article-thumb h2 {
+  font-size: 1.5em;
 }
 
 .article-thumb time {
   align-self: flex-start;
+}
+
+.avatar-circle {
+  float: left;
+  shape-outside: ellipse();
+  margin-right: 30px;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
 }

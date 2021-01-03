@@ -3,7 +3,6 @@ layout: post
 title: "Enter React Server Components"
 date: 2020-12-25
 description: An introduction to what React server components are and how this broadens React use cases.
-image: /assets/images/posts/react-server-components.png
 color: "#61dafb"
 ---
 
@@ -56,7 +55,7 @@ function MarkdownPreview({ text }) {
 
 ## Built-in code-splitting
 
-It's been considered a best-practice to only serve code users need as they need it by using code-splitting. This allows you to break your app down into smaller bundles requiring less code to be sent to the client. Prior to Server Components, one would manually use React.lazy() to define "split-points" or rely on a heuristic set by a meta-framework, such as routes/pages to create new chunks.
+It's been considered a best-practice to only serve code users need as they need it by using code-splitting. This allows you to break your app down into smaller bundles requiring less code to be sent to the client. Prior to Server Components, one would manually use <code>React.lazy()</code> to define "split-points" or rely on a heuristic set by a meta-framework, such as routes/pages to create new chunks.
 
 ```jsx
 // Chart.js (before Server Components)
