@@ -48,8 +48,9 @@
 <link rel="icon" type="image/x-icon" href="{{ '/assets/images/fav.png' | prepend: site.baseurl }}" />
 <link rel="stylesheet" href="{{ '/assets/css/fonts.min.css' | prepend: site.baseurl }}" />
 <link rel="stylesheet" href="{{ '/assets/css/app.min.css' | prepend: site.baseurl }}" />
-<link rel="stylesheet" href="/assets/css/highlight.css" />
-<link rel="stylesheet" href="/assets/css/overides.css" />
+<link rel="stylesheet" href="{{ '/assets/css/highlight.css' | prepend: site.baseurl }}" />
+<link rel="stylesheet" href="{{ '/assets/css/overides.css' | prepend: site.baseurl }}" />
+
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
   href="{{ '/feed.xml' | prepend: site.baseurl }}" />
 <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl }}" />

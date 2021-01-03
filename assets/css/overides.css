@@ -8,11 +8,8 @@ ul li {
 }
 
 pre {
-  background: #011627;
-  color: #fff;
   margin: 20px 0;
-  padding: 0;
-  padding: 10px;
+  padding: 20px;
   width: auto;
   font-size: 1em;
 }

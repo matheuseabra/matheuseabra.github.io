@@ -23,12 +23,12 @@ Server-side rendering is generally used for the initial page load, so post-hydra
 Now with Server Components, components can be refetched as they're required. This limits the amount of code that needs to be send to the client.
 
 ```javascript
-// NoteWithMarkdown.js: *before* Server Components
+// MarkdownPreview.js: *before* Server Components
 
 import marked from 'marked'; // 35.9K (11.2K gzipped)
 import sanitizeHtml from 'sanitize-html'; // 206K (63.3K gzipped)
 
-function NoteWithMarkdown({text}) {
+function MarkdownPreview({text}) {
   const html = sanitizeHtml(marked(text));
   return (/* render */);
 }
@@ -43,12 +43,12 @@ Server Components are not a replacement for SSR. When paired together, they supp
 This time however, the JavaScript bundle will be significantly smaller. Early explorations have shown that bundle size wins could be significant (-18-29%), but the React team will have a clearer idea of wins in the wild once further infrastructure work is complete.
 
 ```javascript
-// NoteWithMarkdown.server.js - Server Component === zero bundle size
+// MarkdownPreview.server.js - Server Component === zero bundle size
 
 import marked from "marked"; // zero bundle size
 import sanitizeHtml from "sanitize-html"; // zero bundle size
 
-function NoteWithMarkdown({ text }) {
+function MarkdownPreview({ text }) {
   // same as before
 }
 ```
@@ -57,20 +57,19 @@ function NoteWithMarkdown({ text }) {
 
 It's been considered a best-practice to only serve code users need as they need it by using code-splitting. This allows you to break your app down into smaller bundles requiring less code to be sent to the client. Prior to Server Components, one would manually use React.lazy() to define "split-points" or rely on a heuristic set by a meta-framework, such as routes/pages to create new chunks.
 
-```javascript
-// PhotoRenderer.js (before Server Components)
+```jsx
+// Chart.js (before Server Components)
 import React from "react";
 
-// one of these will start loading *when rendered on the client*:
-const OldPhotoRenderer = React.lazy(() => import("./OldPhotoRenderer.js"));
-const NewPhotoRenderer = React.lazy(() => import("./NewPhotoRenderer.js"));
+// one of these will start loading * only when rendered on the client*:
+const OldChartRenderer = React.lazy(() => import("./OldChartRenderer.js"));
+const NewChartRenderer = React.lazy(() => import("./NewChartRenderer.js"));
 
-function Photo(props) {
-  // Switch on feature flags, logged in/out, type of content, etc:
-  if (FeatureFlags.useNewPhotoRenderer) {
-    return <NewPhotoRenderer {...props} />;
+function Chart(props) {
+  if (FeatureFlags.useNewChartRenderer) {
+    return <NewChartRenderer {...props} />;
   } else {
-    return <PhotoRenderer {...props} />;
+    return <OldChartRenderer {...props} />;
   }
 }
 ```
@@ -83,27 +82,9 @@ Some of the challenges with code-splitting are:
 
 Server Components introduce automatic code-splitting treating all normal imports in Client components as possible code-split points. They also allow developers to select which component to use much earlier (on the server), allowing the client to fetch it earlier in the rendering process.
 
-```javascript
-// PhotoRenderer.server.js - Server Component
-import React from "react";
+## Do Server components make Next.js SSR obselete?
 
-// one of these will start loading *once rendered and streamed to the client*:
-import OldPhotoRenderer from "./OldPhotoRenderer.client.js";
-import NewPhotoRenderer from "./NewPhotoRenderer.client.js";
-
-function Photo(props) {
-  // Switch on feature flags, logged in/out, type of content, etc:
-  if (FeatureFlags.useNewPhotoRenderer) {
-    return <NewPhotoRenderer {...props} />;
-  } else {
-    return <PhotoRenderer {...props} />;
-  }
-}
-```
-
-## Will Server Components replace Next.js SSR?
-
-No. They are quite different. Initial adoption of Server Components will actually be experimented with via meta-frameworks such as Next.js as research and experimentation continue.
+Short answer is no. They are quite different. Initial adoption of Server Components will actually be experimented with via meta-frameworks such as Next.js as research and experimentation continue.
 
 To summarize a good explanation of the differences between Next.js SSR and Server Components from Dan Abramov:
 
@@ -119,7 +100,7 @@ What you should take away from Server Components:
 
 In a typical app, tons of components only rerender when there’s new data. This will let you run those components on the server instead.
 
-Thus, reducing bundle size by a lot.
+Thus, **reducing bundle size by a lot.**
 
 ## Relevant reading
 
