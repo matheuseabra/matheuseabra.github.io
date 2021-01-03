@@ -1,6 +1,6 @@
 .grid-post {
   max-width: 60vw;
-  margin: 0 auto;
+  margin-left: 140px;
 }
 
 ul li {
@@ -26,6 +26,7 @@ pre {
 
   .grid-post {
     max-width: 85vw;
+    margin-left: 0;
   }
 }
 
