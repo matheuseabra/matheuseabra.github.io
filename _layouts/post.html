@@ -4,21 +4,31 @@ layout: default
 <div>
   <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <section class="intro bg-white rellax" data-rellax-speed="-4">
+    <section class="mast bg-lightgrey rellax" data-rellax-speed="-4">
       <div class="grid">
-        <h1 style="font-size: 3.5em;" itemprop="name headline">{{ page.title }}</h1>
+        <div class="mast__container" style="text-align: left;">
+          <h1 class="mast__title" style="text-align: left; margin: 0">{{ page.title }}</h1>
+          <br>
+          <time class="mast__date black-stripe" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date |
+            date: "%B %Y" }}</time>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="intro bg-white rellax" data-rellax-speed="-4">
+      <div class="grid">
+        <h1 style="text-align: left; margin: 0" class="mast__title" itemprop="name headline">{{ page.title }}</h1>
         <br>
         <time class="mast__date black-stripe" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date |
           date: "%B %Y" }}</time>
       </div>
-    </section>
+    </section> -->
 
     <section class="section-padding bg-white">
       <div class="grid-post">
         <div id="markdown" itemprop="articleBody">
           {{ content }}
         </div>
-
         {% include author-profile.html %}
       </div>
     </section>
