@@ -1,0 +1,47 @@
+<div class="social-share black-stripe">
+  <b>Share on social media:</b>
+  <ul>
+    <li><a class="social-icon" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="iconify" data-icon="mdi:twitter"></span></a>
+    </li>
+    <li>
+      <a class="social-icon" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="iconify" data-icon="mdi:facebook"></span></a>
+    </li>
+    <li>
+      <a class="social-icon" href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}&title={{ site.title }}&summary={{ site.description }}&source={{ site.url }}"><span class="iconify" data-icon="mdi:linkedin"></span></a>
+    </li>
+    <li>
+      <a class="social-icon" href="http://www.reddit.com/submit?url={{ site.url }}&title={{ site.title }}">
+        <span class="iconify" data-icon="mdi:reddit"></span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<style>
+  .social-share {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+
+  .social-share ul {
+    display: inline-flex;
+    list-style: none;
+    margin-top: 10px;
+  }
+
+  .social-share li:first-child {
+    margin-left: 0px;
+  }
+
+  .social-share li {
+    margin-right: 10px;
+  }
+
+  .social-icon {
+    color: white;
+  }
+</style>
