@@ -82,7 +82,7 @@ Some of the challenges with code-splitting are:
 
 Server Components introduce automatic code-splitting treating all normal imports in Client components as possible code-split points. They also allow developers to select which component to use much earlier (on the server), allowing the client to fetch it earlier in the rendering process.
 
-## Do Server components make Next.js SSR obselete?
+## Do Server components make Next.js SSR obsolete?
 
 Short answer is no. They are quite different. Initial adoption of Server Components will actually be experimented with via meta-frameworks such as Next.js as research and experimentation continue.
 
@@ -90,7 +90,7 @@ To summarize a good explanation of the differences between Next.js SSR and Serve
 
 - Code for Server Components is never delivered to the client. In many implementations of SSR using React, component code gets sent to the client via JavaScript bundles anyway. This can delay interactivity.
 
-- Server components enable access to the back-end from anywhere in the tree. When using Next.js, you're used to accessing the back-end via getServerProps() which has the limitation of only working at the top-level page. Random npm components are unable to do this.
+- Server components enable access to the back-end from anywhere in the tree. When using Next.js, you're used to accessing the back-end via `getServerProps()` which has the limitation of only working at the top-level page. Random npm components are unable to do this.
 
 - Server Components may be refetched while maintaining Client-side state inside of the tree. This is because the main transport mechanism is much richer than just HTML, allowing the refetching of a server-rendered part (e.g such as a search result list) without blowing away state inside (e.g search input text, focus, text selection)
 
