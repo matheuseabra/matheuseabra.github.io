@@ -1,14 +1,16 @@
 ---
 order: 3
 title: "Testing, CI/CD & Deployment"
-description: "Testing Driven Development (TDD) reduces the number of bugs released during deployment, making it critical to ship effective applications to production."
+description: "Testing-Driven Development (TDD) along with Continuous Integration/Deployment (CI/CD) reduces the number of bugs released during development, making it critical to ship effective applications to production."
 tags:
   - Pytest
   - Jest
   - Cypress
   - CircleCI
+  - GitHub Actions
   - Docker
   - Amazon Web Services
+  - Vercel
   - Linux
   - Git
 ---

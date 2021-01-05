@@ -1,16 +1,16 @@
 ---
 order: 2
 title: "Server-side Development"
-description: "Writing production-ready code that works across devices and browsers became a must for meeting business requirements and user needs, following current web development standards and best practices."
+description: "Writing production-ready web servers that are performant, maintanable and scalable, following best design patterns for API and micro-service design."
 tags:
-  - Python
   - Node.js
-  - Postgres
+  - Python
+  - PostgreSQL
   - MongoDB
   - GraphQL
   - Web Sockets
   - Redis
-  - Sentry, Grafana
+  - Sentry
   - JWT, Auth0, Cors
 ---
 
