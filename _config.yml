@@ -1,6 +1,6 @@
 # Site/SEO settings
 email: matheusvieiracoelho@gmail.com
-permalink: /:year/:month/:title/
+permalink: /blog/:title/
 google_analytics: "UA-99071986-4"
 
 name: Matheus Seabra
@@ -35,8 +35,8 @@ exclude:
   - vendor
 
 # Pagination
-paginate: 3
-paginate_path: "/page/:num/"
+paginate: 6
+paginate_path: "/blog/page/:num/"
 
 include:
  - _pages

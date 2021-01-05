@@ -1,32 +1,30 @@
 ---
 layout: default
 ---
-<div>
-  <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <section class="mast bg-lightgrey rellax" data-rellax-speed="-4">
-      <div class="grid">
-        <div class="mast__container" style="text-align: left;">
-          <h1 class="mast__title" style="text-align: left; margin: 0">{{ page.title }}</h1>
-          <br>
-          <time class="mast__date black-stripe" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date |
-            date: "%B %Y" }}</time>
-        </div>
+  <section class="mast bg-lightgrey rellax" data-rellax-speed="-4">
+    <div class="grid">
+      <div class="mast__container" style="text-align: left;">
+        <h1 class="mast__title" style="text-align: left; margin: 0">{{ page.title }}</h1>
+        <br>
+        <time class="mast__date black-stripe" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date |
+          date: "%B %Y" }}</time>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section-padding bg-white">
-      <div class="grid-post">
-        <div id="markdown" itemprop="articleBody">
-          {{ content }}
-        </div>
-
-        {% include social-share.html %}
-
-        {% include author-profile.html %}
+  <section class="section-padding bg-white">
+    <div class="grid-post">
+      <div id="markdown" itemprop="articleBody">
+        {{ content }}
       </div>
-    </section>
-  </article>
-</div>
+
+      {% include social-share.html %}
+
+      {% include author-profile.html %}
+    </div>
+  </section>
+</article>
 
 {% include newsletter.html %}

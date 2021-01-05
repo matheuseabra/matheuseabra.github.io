@@ -1,6 +1,6 @@
 ---
 layout: default
-pagination:
+pagination: true
 enabled: true
 ---
 
@@ -35,7 +35,9 @@ enabled: true
   </div>
 </section>
 
-<section id="articles" class="posts section-padding bg-white">
+{% include latest-posts.html %}
+
+<!-- <section id="articles" class="posts section-padding bg-white">
   <div class="grid">
     <h2 class="posts__title black-stripe">
       <span data-aos="slice-up" data-aos-duration="400">Latest</span>
@@ -53,6 +55,6 @@ enabled: true
     </div>
     {% endif %}
   </div>
-</section>
+</section> -->
 
 {% include newsletter.html %}

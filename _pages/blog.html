@@ -1,0 +1,29 @@
+---
+layout: page
+title: "Blog"
+description: ""
+permalink: /blog/
+pagination: true
+enabled: true
+---
+
+<section id="articles" class="posts section-padding bg-lightgrey">
+  <div class="grid">
+    <h2 class="posts__title black-stripe">
+      <span data-aos="slice-up" data-aos-duration="400">Latest</span>
+      <span data-aos="slice-up" data-aos-duration="400" data-aos-delay="100">from the blog</span>
+    </h2>
+    
+    <div class="posts__container" itemscope itemtype="http://schema.org/Blog">
+      {% for post in site.posts %} {% include post-card.html %} {% endfor
+      %}
+    </div>
+
+    {% if paginator.next_page %}
+    <div class="posts__pages" data-pages="{{ paginator.total_pages }}"></div>
+    <div class="posts__pagination">
+      <span class="posts__next">Load More Articles</span>
+    </div>
+    {% endif %}
+  </div>
+</section>
