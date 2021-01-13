@@ -157,6 +157,8 @@ input:focus,
   width: auto;
   padding: 0 20px;
   color: #fff;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.02),
+    0 8px 53px 7px rgba(0, 0, 0, 0.09);
 }
 
 .article-thumb h2 {

@@ -1,0 +1,42 @@
+<article class="work__work">
+  <a class="work__link" href="{{ project.github_url }}" target="_blank">
+    <div class="browser no-padding" data-aos-delay="400" data-aos="fade-in">
+      <div class="project-container">
+        <h3 class="work__title">
+          <span data-aos-duration="400" data-aos="slice-up">{{ project.title }}</span>
+        </h3>
+
+        <p class="work__text" data-aos-delay="100" data-aos-duration="400" data-aos="fade-in">{{
+          project.link_description }}</p>
+
+        <div class="tech-tags-container">
+          {%for tech in project.tech-stack %}
+            <span class="black-stripe">{{ tech }}</span>
+          {%endfor %}
+        </div>
+      </div>
+    </div>
+  </a>
+</article>
+
+<style>
+  .no-padding {
+    padding-top: 0;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+
+  .tech-tags-container {
+    margin: 10px 0 0 0;
+  }
+
+  .tech-tags-container span {
+    font-size: 1em;
+  }
+</style>

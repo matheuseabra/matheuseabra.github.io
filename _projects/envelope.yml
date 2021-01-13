@@ -1,0 +1,14 @@
+---
+order: 2
+title: Envelope
+link_description: Mail sending service that sands batches of emails at scale using AWS SES.
+github_url: https://github.com/matheuseabra/envelope
+tech-stack:
+ - Node.js
+ - JavaScript 
+ - Express
+ - mongoose
+ - MongoDB
+ - Docker
+ - Jest
+---

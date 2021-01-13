@@ -46,6 +46,9 @@ collections:
   work:
     output: true
     permalink: /:path/
+  projects:
+    output: true
+    permalink: /:path/
   companies:
     output: true
     permalink: /:path/

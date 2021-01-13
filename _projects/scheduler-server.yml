@@ -1,0 +1,14 @@
+---
+order: 1
+title: Scheduler Server
+link_description: A scheduler web server that schedules appointments for service-providers.Built using DDD and Clean Architecture principles.
+github_url: https://github.com/matheuseabra/scheduler-server
+tech-stack:
+ - Node.js
+ - TypeScript
+ - Express
+ - typeORM
+ - PostgreSQL
+ - MongoDB
+ - Redis
+---

@@ -1,6 +1,6 @@
 //----------------------------------------------
 // Browser
-//---------------------------------------------- 
+//----------------------------------------------
 .browser {
   position: relative;
 
@@ -13,7 +13,8 @@
     left-radius: 0.4em;
   }
   // box-shadow: 0px 1px 0px 1px rgba($color-black, 0.02), 0px 4px 16px rgba($color-black, 0.05);
-  box-shadow: 0px 1px 0px 1px rgba($color-black, 0.02), 0px 8px 53px 7px rgba($color-black, 0.09);
+  box-shadow: 0px 1px 0px 1px rgba($color-black, 0.02),
+    0px 8px 53px 7px rgba($color-black, 0.09);
 
   video {
     display: block;
@@ -39,7 +40,7 @@
 
       height: 5px;
       width: 5px;
-      
+
       background: rgba($color-black, 0.3);
       border-radius: 100%;
     }
