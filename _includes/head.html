@@ -40,11 +40,11 @@
     site.description
   }}{% endif %}" />
 {% if site.twitter_username %}
-<meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
 {% endif %}
-<meta property="twitter:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{
-    site.default_img | absolute_url
-  }}{% endif %}" />
+{% if page.image %}
+  <meta property="twitter:image" content="{{ page.image | absolute_url }}" />
+{% endif %}
 
 <link rel="icon" type="image/x-icon" href="{{ '/assets/images/fav.png' | prepend: site.baseurl }}" />
 <link rel="stylesheet" href="{{ '/assets/css/fonts.min.css' | prepend: site.baseurl }}" />
