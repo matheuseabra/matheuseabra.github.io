@@ -3,7 +3,6 @@ layout: post
 title: "Processing large datasets in chunks with Node.js"
 date: 2021-01-03
 description: "How to use the readline module in order to process large datasets in chunks and thus not blocking the main thread."
-image:
 color: "#8ac800"
 ---
 
