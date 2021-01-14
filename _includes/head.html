@@ -42,9 +42,7 @@
 {% if site.twitter_username %}
   <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
 {% endif %}
-{% if page.image %}
-  <meta property="twitter:image" content="{{ page.image | absolute_url }}" />
-{% endif %}
+<meta property="twitter:image" content="{{ page.image | absolute_url }}" />
 
 <link rel="icon" type="image/x-icon" href="{{ '/assets/images/fav.png' | prepend: site.baseurl }}" />
 <link rel="stylesheet" href="{{ '/assets/css/fonts.min.css' | prepend: site.baseurl }}" />
