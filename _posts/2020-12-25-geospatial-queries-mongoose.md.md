@@ -14,7 +14,7 @@ To achieve that, a Haversine formula implementation is used to calculate the dis
 
 ## Approach
 
-First, we need to declare a `MessageSchema` and what field should be used as `2dSphere`:
+First, we need to declare a `MessageSchema` and what field should be used as `2dSphere`. Because I'm using TypeScript with Node, I have to define a document type in order to instantiate the model properly.
 
 ```typescript
 // message.model.ts
