@@ -3,7 +3,7 @@ layout: post
 title: "Geospatial queries with mongoose and TypeScript"
 date: 2021-01-05
 description: "Avoiding Harvesine formula when calculating the distance between two points with mongoose's <code>$geometry</code> and <code>$maxDistance</code> operators."
-image: "https://my-image-hosting.s3.amazonaws.com/matheuseabra.me-blog/carbon+(1).png"
+default_img: "https://my-image-hosting.s3.amazonaws.com/matheuseabra.me-blog/carbon+(1).png"
 color: "#2F74C0"
 ---
 

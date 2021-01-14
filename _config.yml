@@ -9,6 +9,7 @@ description: FullStack JavaScript Development
 url: https://matheuseabra.me
 uri: https://matheuseabra.me
 twitter_username: matseabra
+default_img: "https://my-image-hosting.s3.amazonaws.com/matheuseabra.me-blog/default-blog-image.png"
 
 # Sass
 sass:
