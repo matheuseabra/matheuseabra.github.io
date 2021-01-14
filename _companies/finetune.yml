@@ -4,14 +4,8 @@ role: "Software Engineer"
 duration: "2019 - Present"
 title: "FineTune Learning"
 description: "
- FineTune is a startup in the EdTech Industry that creates cloud-based solutions for benchmark and formative writing assessments in grades 6-12, that seamlessly integrates high-quality content, automated feedback, hybrid (A.I./human) rubric-based evaluation, and detailed reporting to inform instruction, tighten the feedback loop, and measure student performance over time. 
+ Working with the innovation team, collaborating with PO's,
+ Designers and QA engineers helping to deliver the vision for
+ their main product FineTune Writing. Implemented a norming and calibration modules, used React, GraphQL and Python/Django to develop the product on both ends, helping the company to scale the product up to thousands of students in the U.S k-12 system. 
 "
-# tags:
-#   - React
-#   - GraphQL
-#   - Python
-#   - PostgresSQL
-#   - Docker
-#   - Amazon Web Services
-#   - GitHub
 ---
