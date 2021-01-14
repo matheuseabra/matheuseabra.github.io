@@ -37,6 +37,8 @@
 {% endif %}
 <meta property="twitter:image"
   content="{% if page.default_img %}{{ page.default_img | escape }}{% else %}{{ site.default_img }}{% endif %}" />
+<meta name="twitter:image:width" content= "280" />
+<meta name="twitter:image:height" content= "480" />
 
 <link rel="icon" type="image/x-icon" href="{{ '/assets/images/fav.png' | prepend: site.baseurl }}" />
 <link rel="stylesheet" href="{{ '/assets/css/fonts.min.css' | prepend: site.baseurl }}" />
