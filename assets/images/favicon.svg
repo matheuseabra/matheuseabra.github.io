@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 207 207">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7f7f7;
+      }
+
+      .cls-2 {
+        fill: #777;
+        font-size: 54px;
+        font-family: SegoeUI-Semilight, Segoe UI;
+        font-weight: 300;
+      }
+
+      .cls-3 {
+        filter: url(#Ellipse_1);
+      }
+    </style>
+    <filter id="Ellipse_1" x="0" y="0" width="207" height="207" filterUnits="userSpaceOnUse">
+      <feOffset dy="9" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-477 -243)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 477, 243)">
+      <circle id="Ellipse_1-2" data-name="Ellipse 1" class="cls-1" cx="76.5" cy="76.5" r="76.5" transform="translate(27 18)"/>
+    </g>
+    <text id="Ms" class="cls-2" transform="translate(543 300)"><tspan x="3.17" y="58">Ms</tspan></text>
+  </g>
+</svg>
