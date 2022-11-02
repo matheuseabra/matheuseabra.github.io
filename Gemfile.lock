@@ -239,6 +239,7 @@ GEM
     zeitwerk (2.3.0)
 
 PLATFORMS
+  universal-darwin-21
   x86_64-linux
 
 DEPENDENCIES
