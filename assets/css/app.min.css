@@ -876,8 +876,8 @@ mark {
   width: 100%;
 }
 .intro {
-  height: 26em;
-  padding: 4em 1em;
+  height: 90vh;
+  padding: 4em 2em;
 }
 @media (min-width: 32em) {
   .intro {
